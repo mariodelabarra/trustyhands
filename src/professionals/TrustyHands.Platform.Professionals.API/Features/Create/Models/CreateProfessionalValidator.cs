@@ -3,7 +3,7 @@ using TrustyHands.Platform.Professionals.API.Shared.Models.Enums;
 
 namespace TrustyHands.Platform.Professionals.API.Features.Create.Models;
 
-public class CreateProfessionalValidator : AbstractValidator<CreateProfessional.Command>
+public class CreateProfessionalValidator : AbstractValidator<CreateProfessionalCommand>
 {
     public CreateProfessionalValidator()
     {

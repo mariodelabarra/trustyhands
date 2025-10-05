@@ -4,21 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using TrustyHands.Platform.Professionals.API.Features.Create.Events;
 using TrustyHands.Platform.Professionals.API.Shared.Infrastructure.Persistence;
 using TrustyHands.Platform.Professionals.API.Shared.Models;
-using TrustyHands.Platform.Professionals.API.Shared.Models.Enums;
 
-namespace TrustyHands.Platform.Professionals.API.Features.Create;
-
-public static class CreateProfessional
+namespace TrustyHands.Platform.Professionals.API.Features.Create
 {
-    public record Command(string Name, string Email, Specialty Specialty) : IRequest<Result>;
-
-    public record Result(Guid Id, string Message);
-
-    public class Handler(ApplicationDbContext _context,
+    public class CreateProfessionalCommandHandler(ApplicationDbContext _context,
         DaprClient _daprClient,
-        ILogger<Handler> _logger) : IRequestHandler<Command, Result>
+        ILogger<CreateProfessionalCommandHandler> _logger) : IRequestHandler<CreateProfessionalCommand, CreateProfessionalResult>
     {
-        public async Task<Result> Handle(Command request, CancellationToken cancellationToken)
+        public async Task<CreateProfessionalResult> Handle(CreateProfessionalCommand request, CancellationToken cancellationToken)
         {
             // Check for duplicate email
             var exists = await _context.Professionals
@@ -59,7 +52,7 @@ public static class CreateProfessional
 
             _logger.LogInformation("Published ProfessionalRegistered event for ID: {ProfessionalId}", professional.Id);
 
-            return new Result(professional.Id, "Professional created successfully");
+            return new CreateProfessionalResult(professional.Id, "Professional created successfully");
         }
     }
 }
