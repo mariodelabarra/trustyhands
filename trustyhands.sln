@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustyHands.Platform.Professionals.API", "src\professionals\TrustyHands.Platform.Professionals.API\TrustyHands.Platform.Professionals.API.csproj", "{150037DB-54C5-4AB3-8593-999096EAC856}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.TrustyHands.Professionals.API", "src\professionals\Platform.TrustyHands.Professionals.API\Platform.TrustyHands.Professionals.API.csproj", "{150037DB-54C5-4AB3-8593-999096EAC856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustyHands.Platform.Professionals.Contracts", "src\professionals\TrustyHands.Platform.Professionals.Contracts\TrustyHands.Platform.Professionals.Contracts.csproj", "{AC5168BC-6861-4E8A-9022-10E66C9DB57F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.TrustyHands.Professionals.Contracts", "src\professionals\Platform.TrustyHands.Professionals.Contracts\Platform.TrustyHands.Professionals.Contracts.csproj", "{AC5168BC-6861-4E8A-9022-10E66C9DB57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustyHands.Platform.Professionals.UnitTests", "src\professionals\TrustyHands.Platform.Professionals.UnitTests\TrustyHands.Platform.Professionals.UnitTests.csproj", "{EECFA394-89EF-40D1-8811-BC75C5037990}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.TrustyHands.Professionals.UnitTests", "src\professionals\Platform.TrustyHands.Professionals.UnitTests\Platform.TrustyHands.Professionals.UnitTests.csproj", "{EECFA394-89EF-40D1-8811-BC75C5037990}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
